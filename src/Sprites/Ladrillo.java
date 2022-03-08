@@ -1,0 +1,29 @@
+ /*************************************************************
+ * ITM - Departamente de Ingeniería en Sistemas Computacionales
+ * Semestre Agosto - Diciembre 2020
+ *
+ * Nombre: Oscar Hernan Chan Tun
+ * Fecha: 25 de Octubre del 2020
+ * Hora: 10:12 AM
+ *
+ * Projecto: BattleCity
+ * Paquete: Sprites
+ * Archivo: Ladrillo
+ * Descripción: Clase para el diseño de los bloques con aspecto
+ * de ladrillo
+ *
+ *************************************************************/
+
+package Sprites;
+
+public class Ladrillo extends Bloque
+{
+    public Ladrillo(int x, int y) 
+    {
+        super(x, y);
+        cargarImagen("Recursos/Ladrillo.png");
+        getImageDimensions();
+        setDurabilidad(1);
+        setTipo(1);
+    }
+}
